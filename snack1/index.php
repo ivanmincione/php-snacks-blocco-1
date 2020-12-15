@@ -50,4 +50,45 @@
         echo ($matches[$i]["home"] . "-" . $matches[$i]["away"] . " | " . $matches[$i]["scoreHome"] . "-" . $matches[$i]["scoreAway"]) . "<br>";
     }
 
+
+    // ---------------- alternativa utilizzando il ciclo for each --------------------------
+    // cambio la struttura dell'array 
+    $matches = [
+        "match1" => [
+            "home" => "Olimpia Milano",
+            "away" => "Cantù",
+            "scoreHome" => "55",
+            "scoreAway" => "60",
+        ],
+        "match2" => [
+            "home" => "Brindisi",
+            "away" => "Virtus Bologna",
+            "scoreHome" => "70",
+            "scoreAway" => "80",
+        ],
+        "match3" => [
+            "home" => "Trento",
+            "away" => "Dinamo Sassari",
+            "scoreHome" => "65",
+            "scoreAway" => "68",
+        ],
+        "match4" => [
+            "home" => "Reggiana",
+            "away" => "Brescia",
+            "scoreHome" => "70",
+            "scoreAway" => "77",
+        ],
+        "match5" => [
+            "home" => "Venezia",
+            "away" => "Cremona",
+            "scoreHome" => "78",
+            "scoreAway" => "75",
+        ],
+    ];
+
+    foreach ($matches as $currentMatch) {
+        echo $currentMatch ["home"] . " " . $currentMatch ["away"] . " " . " | " . " " .
+        $currentMatch ["scoreHome"] . " " . $currentMatch ["scoreAway"] . "<br>" ;
+    }
+
 ?>
