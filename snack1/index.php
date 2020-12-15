@@ -52,7 +52,14 @@
 
 
     // ---------------- alternativa utilizzando il ciclo for each --------------------------
-    // cambio la struttura dell'array 
+    //The foreach construct provides an easy way to iterate over arrays. foreach works only on arrays and objects, and will issue an error when you try to use it on a variable with a different data type or an uninitialized variable. There are two syntaxes:
+
+                                        // foreach (iterable_expression as $value)
+                                        //     statement
+                                        // foreach (iterable_expression as $key => $value)
+                                        //     statement
+
+    // cambio la struttura dell'array
     $matches = [
         "match1" => [
             "home" => "Olimpia Milano",
